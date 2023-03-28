@@ -258,7 +258,7 @@ class App {
       .openPopup();
     markerArray.push(marker);
   }
-  async _readerWorkoutOnList(workout) {
+  _readerWorkoutOnList(workout) {
     let html = `
       <li class="workout workout--${workout.type}" data-id="${workout.id}">
       <h2 class="workout__title" style="font-size:15px"> ${
