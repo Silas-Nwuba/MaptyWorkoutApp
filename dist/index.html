@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="/icon.b1b2fa1c.png">
+    <!-- prettier-ignore -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- prettier-ignore -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!--prettier-ignore-->
+    <script defer="" src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/index.1303bb05.css">
+    <script src="/index.5baa4167.js" defer=""></script>
+   
+    <title>mapty // Map your workouts</title>
+  </head>
+  <body>
+      <section class="main-container">
+        <div class="sidebar">
+        <img src="/logo.3eb009db.png" alt="Logo" class="logo">
+        <ul class="workouts">
+          <form class="form hidden">
+            <div class="form__row">
+              <label class="form__label">Type</label>
+              <select class="form__input form__input--type">
+                <option value="running">Running</option>
+                <option value="cycling">Cycling</option>
+              </select>
+            </div>
+            <div class="form__row">
+              <label class="form__label">Distance</label>
+              <input class="form__input form__input--distance" placeholder="km">
+            </div>
+            <div class="form__row">
+              <label class="form__label">Duration</label>
+              <input class="form__input form__input--duration" placeholder="min">
+            </div>
+            <div class="form__row">
+              <label class="form__label">Cadence</label>
+              <input class="form__input form__input--cadence" placeholder="step/min">
+            </div>
+            <div class="form__row form__row--hidden">
+              <label class="form__label">Elev Gain</label>
+              <input class="form__input form__input--elevation" placeholder="meters">
+            </div>
+            <button type="submit" class="form__btn">OK</button>
+          </form>
+          <div class="delete--all_workout hidden">
+            <button type="submit">Delete All</button>
+          </div>
+        </ul>
+        <!-- comfirmation model -->
+        <div class="confirm-modal modal__hidden">
+          <i class="bi bi-x-lg comfirm_cancel_icon"></i>
+          <div class="confirm-content">
+            <div class="confirm__message">
+              <h2>Are you sure?</h2>
+              <p>
+                Do you really want to delete this workout?<br>this process can
+                not be undone
+              </p>
+            </div>
+            <button type="button" class="cancel__button">Cancel</button>
+            <button type="submit" class="delete__confirm__button">
+              Delete
+            </button>
+          </div>
+        </div>
+        <div class="modal__overlay modal__hidden"></div>
+        <div class="toast toast-hidden">
+          <i class="bi bi-info-circle"></i>
+          <span>
+            <p>Invalid data.</p>
+            <p class="error-message">"distance" is required</p>
+            <i class="bi-x-lg"></i>
+          </span>
+        </div>
+      
+        <!-- update-loader -->
+        <div class="update-loader"></div>
+
+        <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+        <div class="toast-progress active">
+          <div class="toast-contents">
+            <i class="bi bi-check-lg"></i>
+
+            <div class="message">
+              <span class="text text-1">Success</span>
+              <span class="text text-2">Your changes has been updated</span>
+            </div>
+          </div>
+          <i class="bi-x-lg close"></i>
+
+          <!-- Remove 'active' class, this is just to show in Codepen thumbnail -->
+          <div class="progress active"></div>
+        </div>
+        <p class="copyright">
+          &copy; Copyright by
+          <a class="twitter-link" target="_blank" href="https://twitter.com/silasNwuba">Silas Nwuba</a>
+        </p>
+      </div>
+    
+      <h2>silas</h2>
+      </section>
+     
+      <div id="map"></div>
+    
+    <!--upadte workout form-->
+    <div class="edit--workout modal__hidden"></div>
+  </body>
+</html>

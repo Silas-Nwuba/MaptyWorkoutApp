@@ -1,0 +1,19 @@
+{
+  "name": "mapty-app",
+  "version": "1.0.0",
+  "description": "",
+  "app": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Ebuka",
+  "license": "ISC",
+  "dependencies": {
+    "leaflet": "^1.9.3",
+    "lodash-es": "^4.17.21"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
