@@ -558,9 +558,9 @@ function hmrAccept(bundle, id) {
 
 },{}],"igcvL":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _leaflet = require("leaflet");
+var _leaflet = require("./node_modules/leaflet");
 var _leafletDefault = parcelHelpers.interopDefault(_leaflet);
-var _markerIconPng = require("leaflet/dist/images/marker-icon.png");
+var _markerIconPng = require("./node_modules/leaflet/dist/images/marker-icon.png");
 var _markerIconPngDefault = parcelHelpers.interopDefault(_markerIconPng);
 "use strict";
 const form = document.querySelector(".form");
@@ -1293,7 +1293,7 @@ closeConfirmModal();
 removeConfirmModal();
 if (module.hot) module.hot.accept();
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","leaflet":"iFbO2","leaflet/dist/images/marker-icon.png":"bqHMA"}],"gkKU3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./node_modules/leaflet":"iFbO2","./node_modules/leaflet/dist/images/marker-icon.png":"bqHMA"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a

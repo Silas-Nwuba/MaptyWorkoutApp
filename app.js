@@ -1,6 +1,6 @@
 'use strict';
-import Leaflet from 'leaflet';
-import markerImage from 'leaflet/dist/images/marker-icon.png';
+import Leaflet from './node_modules/leaflet';
+import markerImage from './node_modules/leaflet/dist/images/marker-icon.png';
 const form = document.querySelector('.form');
 const containerWorkouts = document.querySelector('.workouts');
 const workoutsDiv = document.querySelector('.workout');
