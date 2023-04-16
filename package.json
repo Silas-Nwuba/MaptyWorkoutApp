@@ -1,11 +1,11 @@
 {
   "name": "mapty-app",
   "version": "1.0.0",
-  "description": "",
-  "app": "index.html",
+  "description": "mapty application",
+  "default": "index.html",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir ./dist"
   },
   "author": "Ebuka",
   "license": "ISC",
